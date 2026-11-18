@@ -1,0 +1,58 @@
+body{
+    background-color:azure;
+    justify-content: center;
+    border: 16px solid black;
+}
+.header1{
+    background-color: crimson;
+    padding: 20px;
+}
+.p1{
+    background-color: cadetblue;
+}
+.box1{
+    background-color: aquamarine;
+    border: 12px solid brown;
+    border-radius: 20px;
+}
+.layer1{
+   border: 3px solid rosybrown;
+
+}
+.table{
+    background-color: aquamarine;
+}
+.s1{
+    background-color: darkkhaki;
+    border-radius: 40px;
+}
+.position-box {
+    position: relative;
+}
+
+.new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 5px;
+    font-size: 12px;
+}
+.form{
+    background-color: burlywood;
+}
+.input{
+    border-radius: 40px;
+}
+.button{
+    color: crimson;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.footer{
+    text-align: right;
+    background-color: dimgrey;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
