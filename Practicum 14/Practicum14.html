@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QA Edge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Practicum14.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h2>QA Edge</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#priority">Bug Priority</a>
+            <a href="#process">QA Process</a>
+            <a href="#bug-manager">Bug Manager</a>
+            <a href="#contact">Contact</a>
+            <a href="#api-dashboard">API Dashboard</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="hero">
+        <h1 class="header1">
+            Accelerate Your Software Quality.<br>
+            Expert QA and Testing Services.
+        </h1>
+
+        <p class="p1">
+            From Manual to Automation, Performance to Security -
+            We ensure your applications are robust, secure, and market-ready.
+        </p>
+    </div>
+
+    <!-- Services -->
+    <section id="services">
+
+        <h2><em>Our Core Testing Services</em></h2>
+
+        <div class="services-container">
+
+            <div class="box1">
+                <h3><em>Manual Testing</em></h3>
+                <p>Exploratory, functional, and regression testing by expert engineers.</p>
+
+                <button class="learn-btn" data-target="manual-info">
+                    Learn More
+                </button>
+
+                <div class="service-info" id="manual-info">
+                    Manual testing identifies errors through
+                    human interaction and carefully designed test cases.
+                </div>
+            </div>
+
+            <div class="box1 position-box">
+                <h3><em>Automation Testing</em></h3>
+                <span class="new-label">NEW</span>
+
+                <p>Scalable test scripts using modern frameworks to speed up delivery.</p>
+
+                <button class="learn-btn" data-target="automation-info">
+                    Learn More
+                </button>
+
+                <div class="service-info" id="automation-info">
+                    Automation testing uses tools like Selenium
+                    to execute repetitive test cases efficiently.
+                </div>
+            </div>
+
+            <div class="box1">
+                <h3><em>Performance Testing</em></h3>
+                <p>Load, stress, and scalability testing ensuring stability under peak traffic.</p>
+
+                <button class="learn-btn" data-target="performance-info">
+                    Learn More
+                </button>
+
+                <div class="service-info" id="performance-info">
+                    Performance testing measures application speed,
+                    responsiveness, and stability under workloads.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testing Gallery -->
+    <section class="gallery">
+
+        <h2>Our Testing Gallery</h2>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="C:\1st year\web technology\module 1\Manual Testing.png" alt="Manual Testing">
+                <h3>Manual Testing</h3>
+                <p>Identifying bugs through manual test execution.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="C:\1st year\web technology\module 1\Automation Testing.png" alt="Automation Testing">
+                <h3>Automation Testing</h3>
+                <p>Automating repetitive test cases using Selenium.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="C:\1st year\web technology\module 1\Performance Testing.png" alt="Performance Testing">
+                <h3>Performance Testing</h3>
+                <p>Monitoring application speed and stability under load.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="C:\1st year\web technology\module 1\Security Testing.png" alt="Security Testing">
+                <h3>Security Testing</h3>
+                <p>Detecting vulnerabilities and protecting applications.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="layer1" id="technologies">
+
+        <h2><em>Technologies We Use</em></h2>
+
+        <div class="technology-container">
+
+            <div class="technology-item">
+                <img src="C:\1st year\web technology\module 1\HTML\SELENIUM.png"
+                     alt="Selenium" width="100" height="100">
+                <h3>Selenium</h3>
+            </div>
+
+            <div class="technology-item">
+                <img src="C:\1st year\web technology\module 1\HTML\CYpress.jpg"
+                     alt="Cypress" width="100" height="100">
+                <h3>Cypress</h3>
+            </div>
+
+            <div class="technology-item">
+                <img src="C:\1st year\web technology\module 1\HTML\playwright.png"
+                     alt="Playwright" width="100" height="100">
+                <h3>Playwright</h3>
+            </div>
+
+            <div class="technology-item">
+                <img src="C:\1st year\web technology\module 1\HTML\docker.png"
+                     alt="Docker" width="100" height="100">
+                <h3>Docker</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+    <a href="https://test.io/">View our base company</a>
+    <br><br>
+    <hr>
+
+    <!-- Bug Priority Table -->
+    <section>
+        <h2>Bug Priority Levels</h2>
+
+        <table id="priority" class="table" border="2">
+
+            <thead>
+                <tr>
+                    <th>Bug Priority</th>
+                    <th>Definition</th>
+                    <th>Initial Response</th>
+                    <th>Targeted Fix Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Critical</td>
+                    <td>Core system crash / App completely down</td>
+                    <td>Under 30 Mins</td>
+                    <td>2 - 4 Hours</td>
+                </tr>
+
+                <tr>
+                    <td>Major</td>
+                    <td>Key feature broken with no workaround</td>
+                    <td>Under 2 Hours</td>
+                    <td>Same Business Day</td>
+                </tr>
+
+                <tr>
+                    <td>Minor</td>
+                    <td>Small cosmetic errors or text alignment issues</td>
+                    <td>Under 24 Hours</td>
+                    <td>Next Scheduled Release</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+    <!-- QA Process -->
+    <section class="s1" id="process">
+
+        <h3 class="header1">
+            <em>Our Structured QA Process</em>
+        </h3>
+
+        <button id="process-btn" class="learn-btn">
+            Show QA Process
+        </button>
+
+        <div id="process-content" class="process-content">
+
+            <ol>
+                <li>Requirements Gathering</li>
+                <li>Test Planning</li>
+                <li>Environment Setup</li>
+                <li>Test Execution</li>
+                <li>Defect Reporting</li>
+                <li>Re-Testing and Closure</li>
+            </ol>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="s1">
+
+        <h3 class="header1">
+            <em>Key Benefits of Working With Us</em>
+        </h3>
+
+        <ul>
+            <li>99.8% Test Coverage</li>
+            <li>Rapid Script Deployment</li>
+            <li>Real Device Arrays</li>
+            <li>Zero Overhead Setup</li>
+            <li>Flexible Contracts</li>
+        </ul>
+
+    </section>
+
+    <img src="C:\1st year\web technology\module 1\HTML\software_testing.jpg"
+         alt="Software Testing" width="200" height="200">
+
+    <br><br>
+    <hr>
+
+    <video controls autoplay loop>
+        <source src="C:\1st year\web technology\module 1\HTML\Software Testing Workshops Intro (1).mp4"
+                type="video/mp4">
+    </video>
+
+    <hr>
+
+    <!-- NEW: Dynamic Bug Report Manager -->
+    <section class="bug-manager" id="bug-manager">
+
+        <h2><em>QA Edge - Bug Report Manager</em></h2>
+
+        <p>
+            Add, update, display and remove software testing bug reports.
+        </p>
+
+        <div class="bug-form">
+
+            <h3>Enter Bug Details</h3>
+
+            <label>Bug Title:</label>
+            <input type="text" id="bug-title"
+                   placeholder="Enter bug title">
+
+            <br><br>
+
+            <label>Bug Description:</label>
+            <input type="text" id="bug-description"
+                   placeholder="Describe the bug">
+
+            <br><br>
+
+            <label>Bug Priority:</label>
+
+            <select id="bug-priority">
+                <option value="Critical">Critical</option>
+                <option value="Major">Major</option>
+                <option value="Minor">Minor</option>
+            </select>
+
+            <br><br>
+
+            <button type="button" id="add-bug" class="button">
+                Add Bug Report
+            </button>
+
+        </div>
+
+        <h3>Reported Bugs</h3>
+
+        <ul id="bug-list" class="bug-list">
+            <li id="empty-message">No bug reports added yet.</li>
+        </ul>
+
+        <p id="bug-message" class="bug-message"></p>
+
+    </section>
+
+<!-- API Integrated QA Dashboard -->
+<section class="api-dashboard" id="api-dashboard">
+
+    <h2>QA Edge - API Testing Dashboard</h2>
+
+    <p>
+        Retrieve and display testing task information using an API.
+    </p>
+
+    <button id="load-api-btn" class="button">
+        Load Testing Tasks
+    </button>
+
+    <p id="api-loading">Loading data...</p>
+
+    <p id="api-error"></p>
+
+    <div class="api-table-container">
+
+        <table class="api-table">
+
+            <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Testing Task</th>
+                    <th>Status</th>
+                    <th>User ID</th>
+                </tr>
+            </thead>
+
+            <tbody id="api-data">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- QA Task Manager - CRUD Operations -->
+
+<section class="task-manager" id="task-manager">
+
+    <h2>QA Edge - Testing Task Manager</h2>
+
+    <p>Manage software testing tasks efficiently.</p>
+
+    <!-- Task Form -->
+
+    <form id="task-form">
+
+        <h3 id="form-heading">Add New Testing Task</h3>
+
+        <label for="task-title">Task Title:</label>
+        <input
+            type="text"
+            id="task-title"
+            placeholder="Enter task title"
+            required
+        >
+
+        <label for="task-description">Task Description:</label>
+        <textarea
+            id="task-description"
+            placeholder="Enter task description"
+            required
+        ></textarea>
+
+        <label for="task-priority">Priority:</label>
+        <select id="task-priority" required>
+            <option value="">Select Priority</option>
+            <option value="Critical">Critical</option>
+            <option value="Major">Major</option>
+            <option value="Minor">Minor</option>
+        </select>
+
+        <label for="task-status">Task Status:</label>
+        <select id="task-status" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button type="submit" id="save-task" class="button">
+            Add Task
+        </button>
+
+        <button type="reset" id="reset-task" class="button">
+            Clear
+        </button>
+
+    </form>
+
+    <!-- Task List -->
+
+    <h3>Testing Task Records</h3>
+
+    <div class="task-table-container">
+
+        <table class="task-table">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Task Title</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="task-list">
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <p id="task-message"></p>
+
+</section>
+
+
+    
+<!-- QA Consultation Form -->
+<section class="consultation-section" id="contact-form">
+
+    <h2 class="header1">
+        Get a Free QA Consultation
+    </h2>
+
+    <div class="form-container">
+
+        <form id="consultation-form" class="form" novalidate>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="input"
+                    placeholder="Enter your full name"
+                    minlength="3"
+                    maxlength="40"
+                    pattern="[A-Za-z ]{3,40}"
+                    required
+                >
+
+                <br><br>
+
+                <label for="email">Business Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="input"
+                    placeholder="example@company.com"
+                    maxlength="60"
+                    required
+                >
+
+                <br><br>
+
+                <label for="phoneno">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phoneno"
+                    name="phoneno"
+                    class="input"
+                    placeholder="Enter 10-digit number"
+                    minlength="10"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    required
+                >
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Testing Requirements</legend>
+
+                <label for="service">Required Testing Service:</label>
+
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Manual Testing">Manual Testing</option>
+                    <option value="Automation Testing">Automation Testing</option>
+                    <option value="Performance Testing">Performance Testing</option>
+                    <option value="Security Testing">Security Testing</option>
+                    <option value="API Testing">API Testing</option>
+                    <option value="Mobile App Testing">Mobile App Testing</option>
+                </select>
+
+                <br><br>
+
+                <label for="budget">Estimated Project Budget (₹):</label>
+
+                <input
+                    type="number"
+                    id="budget"
+                    name="budget"
+                    class="input"
+                    placeholder="Enter your budget"
+                    min="1000"
+                    max="1000000"
+                    required
+                >
+
+                <br><br>
+
+                <label for="details">Project Requirements:</label>
+
+                <textarea
+                    id="details"
+                    name="details"
+                    rows="5"
+                    cols="30"
+                    placeholder="Describe your software testing requirements"
+                    minlength="10"
+                    maxlength="500"
+                    required
+                ></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit" class="button">
+                Submit Enquiry
+            </button>
+
+            <button type="reset" class="button">
+                Reset Form
+            </button>
+
+        </form>
+
+    </div>
+
+    <p id="form-error" class="form-error"></p>
+
+    <div id="notification" class="notification">
+        <span>✓</span>
+        Your QA consultation request has been submitted successfully!
+    </div>
+
+</section>
+
+<!-- QA Test Case Explorer -->
+
+<section class="qa-explorer" id="qa-explorer">
+
+    <h2>QA Edge - Test Case Explorer</h2>
+
+    <p>Search and filter software testing scenarios.</p>
+
+    <!-- Search and Filter -->
+
+    <div class="filter-container">
+
+        <input
+            type="text"
+            id="case-search"
+            placeholder="Search test cases..."
+        >
+
+        <select id="category-filter">
+
+            <option value="All">All Testing Types</option>
+            <option value="Manual Testing">Manual Testing</option>
+            <option value="Automation Testing">Automation Testing</option>
+            <option value="Performance Testing">Performance Testing</option>
+            <option value="Security Testing">Security Testing</option>
+
+        </select>
+
+        <button type="button" id="clear-filter">
+            Clear Filters
+        </button>
+
+    </div>
+
+    <!-- Test Case Display -->
+
+    <div id="case-container" class="case-grid">
+    </div>
+
+    <p id="case-count"></p>
+
+    <p id="no-cases">
+        No matching test cases found.
+    </p>
+
+</section>
+
+<script src="Practicum14.js"></script>
+</body>
+</html>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <p>Contact us: +91-11173 87333</p>
+        <p>&copy; Copyright 2025, All rights reserved</p>
+    </footer>
+
+    <script src="Practicum14.js"></script>
+
+</body>
+</html>
