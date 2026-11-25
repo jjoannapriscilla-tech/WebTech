@@ -1,0 +1,406 @@
+
+body {
+    background-color: azure;
+    justify-content: center;
+    border: 16px solid black;
+    margin: 0;
+    padding-bottom: 100px;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #ac398e;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+
+/* Heading */
+.header1 {
+    background-color: crimson;
+    padding: 20px;
+    animation: slideDown 1s ease;
+}
+
+.p1 {
+    background-color: cadetblue;
+    padding: 15px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes notificationSlide {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Service Cards */
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+.box1 {
+    background-color: aquamarine;
+    border: 12px solid brown;
+    border-radius: 20px;
+    padding: 15px;
+    flex: 1 1 230px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.box1:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 18px gray;
+}
+
+.position-box {
+    position: relative;
+}
+
+.new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+/* Learn More Buttons */
+.learn-btn {
+    background-color: darkmagenta;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    background-color: crimson;
+    transform: scale(1.08);
+}
+
+/* Service Information */
+.service-info {
+    display: none;
+    background-color: white;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.service-info.show {
+    display: block;
+    animation: popUp 0.5s ease forwards;
+}
+
+/* Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 15px;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.04);
+    opacity: 0.85;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Technologies */
+.layer1 {
+    border: 3px solid rosybrown;
+    padding: 20px;
+    text-align: center;
+}
+
+.technology-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.technology-item {
+    padding: 15px;
+    transition: transform 0.4s;
+}
+
+.technology-item:hover {
+    transform: scale(1.15) rotate(3deg);
+}
+
+.technology-item img {
+    object-fit: contain;
+}
+
+/* Bug Priority Table */
+.table {
+    background-color: aquamarine;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+}
+
+/* QA Process */
+.s1 {
+    background-color: darkkhaki;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.process-content {
+    display: none;
+    opacity: 0;
+}
+
+.process-content.show {
+    display: block;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.process-content li {
+    padding: 8px;
+}
+
+/* Form */
+.form-container {
+    padding: 20px;
+}
+
+.form {
+    background-color: burlywood;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.input {
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.button {
+    color: crimson;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: white;
+    transform: scale(1.08);
+}
+
+/* Notification */
+.notification {
+    display: none;
+    background-color: #248b45;
+    color: white;
+    padding: 18px;
+    margin: 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.notification.show {
+    display: block;
+    animation: notificationSlide 0.5s ease;
+}
+
+/* Footer */
+.footer {
+    text-align: right;
+    background-color: dimgrey;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box1 {
+        width: 90%;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+
+    body {
+        border-width: 5px;
+    }
+
+    .header1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .p1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .box1 {
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .table {
+        font-size: 10px;
+    }
+
+    .table th,
+    .table td {
+        padding: 5px;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .footer {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
