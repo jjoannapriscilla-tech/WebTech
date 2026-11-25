@@ -1,0 +1,603 @@
+
+body {
+    background-color: azure;
+    justify-content: center;
+    border: 16px solid black;
+    margin: 0;
+    padding-bottom: 100px;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #ac398e;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+
+/* Headings */
+.header1 {
+    background-color: crimson;
+    padding: 20px;
+    animation: slideDown 1s ease;
+}
+
+.p1 {
+    background-color: cadetblue;
+    padding: 15px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes notificationSlide {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Service Cards */
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+.box1 {
+    background-color: aquamarine;
+    border: 12px solid brown;
+    border-radius: 20px;
+    padding: 15px;
+    flex: 1 1 230px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.box1:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 18px gray;
+}
+
+.position-box {
+    position: relative;
+}
+
+.new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.learn-btn {
+    background-color: darkmagenta;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    background-color: crimson;
+    transform: scale(1.08);
+}
+
+/* Service Information */
+.service-info {
+    display: none;
+    background-color: white;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.service-info.show {
+    display: block;
+    animation: popUp 0.5s ease forwards;
+}
+
+/* Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 15px;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.04);
+    opacity: 0.85;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Technologies */
+.layer1 {
+    border: 3px solid rosybrown;
+    padding: 20px;
+    text-align: center;
+}
+
+.technology-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.technology-item {
+    padding: 15px;
+    transition: transform 0.4s;
+}
+
+.technology-item:hover {
+    transform: scale(1.15) rotate(3deg);
+}
+
+.technology-item img {
+    object-fit: contain;
+}
+
+/* Bug Priority Table */
+.table {
+    background-color: aquamarine;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+}
+
+/* QA Process */
+.s1 {
+    background-color: darkkhaki;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.process-content {
+    display: none;
+}
+
+.process-content.show {
+    display: block;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.process-content li {
+    padding: 8px;
+}
+
+/* NEW: Bug Report Manager */
+.bug-manager {
+    background-color: #e3f4f1;
+    border: 3px solid rosybrown;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.bug-manager h2 {
+    color: crimson;
+    text-align: center;
+}
+
+.bug-form {
+    background-color: aquamarine;
+    border: 3px solid brown;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.bug-form input,
+.bug-form select {
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 450px;
+}
+
+.bug-form label {
+    font-weight: bold;
+}
+
+.bug-list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.bug-list li {
+    background-color: white;
+    border: 2px solid rosybrown;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 5px;
+    list-style: none;
+    animation: popUp 0.5s ease;
+}
+
+.bug-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+.bug-description {
+    margin: 12px 0;
+}
+
+.bug-priority {
+    display: inline-block;
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.edit-btn,
+.remove-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    color: white;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background-color: royalblue;
+}
+
+.remove-btn {
+    background-color: crimson;
+}
+
+.edit-btn:hover,
+.remove-btn:hover {
+    transform: scale(1.08);
+}
+
+.bug-message {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/* Form */
+.form-container {
+    padding: 20px;
+}
+
+.form {
+    background-color: burlywood;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.input {
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.button {
+    color: crimson;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: crimson;
+    color: white;
+    transform: scale(1.08);
+}
+
+/* Notification */
+.notification {
+    display: none;
+    background-color: #248b45;
+    color: white;
+    padding: 18px;
+    margin: 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.notification.show {
+    display: block;
+    animation: notificationSlide 0.5s ease;
+}
+
+/* Footer */
+.footer {
+    text-align: right;
+    background-color: dimgrey;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .bug-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+
+    body {
+        border-width: 5px;
+    }
+
+    .header1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .p1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .table {
+        font-size: 10px;
+    }
+
+    .table th,
+    .table td {
+        padding: 5px;
+    }
+
+    .bug-manager {
+        margin: 10px;
+        padding: 12px;
+    }
+
+    .bug-form input,
+    .bug-form select {
+        width: 90%;
+    }
+
+    .bug-list {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .footer {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
+
+/* Consultation Form Validation */
+
+.consultation-section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.form {
+    background-color: burlywood;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid brown;
+}
+
+.form fieldset {
+    border: 2px solid brown;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.form legend {
+    font-weight: bold;
+    color: darkmagenta;
+    padding: 5px 10px;
+}
+
+.form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+    display: block;
+    width: 90%;
+    max-width: 450px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+/* Focus Effect */
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+    outline: none;
+    border: 2px solid royalblue;
+    background-color: white;
+}
+
+/* Valid Input */
+.form input:valid,
+.form select:valid,
+.form textarea:valid {
+    border-color: green;
+}
+
+/* Invalid Input */
+.form input:invalid,
+.form select:invalid,
+.form textarea:invalid {
+    border-color: crimson;
+}
+
+/* Error Message */
+.form-error {
+    color: crimson;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Success Notification */
+.notification {
+    display: none;
+    background-color: #248b45;
+    color: white;
+    padding: 18px;
+    margin: 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.notification.show {
+    display: block;
+    animation: notificationSlide 0.5s ease;
+}
